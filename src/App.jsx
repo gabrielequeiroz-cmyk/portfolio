@@ -1,11 +1,16 @@
 import CardList from "./components/CardList/CardList";
+import Header from "./components/Header/Header";
 import "./App.css";
 
 function App() {
     return (
-        <main>
-            <CardList />
-        </main>
+        <>
+            <Header />
+
+            <main>
+                <CardList />
+            </main>
+        </>
     );
 }
 

@@ -1,9 +1,22 @@
 import "./CardNFT.css";
 import "animate.css";
 
-function CardNFT({ titulo, descricao, preco, tempo }) {
+function CardNFT({ titulo, descricao, preco, tempo, imagem }) {
     return (
         <div className="card-nft animate__animated animate__fadeInUp">
+
+            <div className="nft-image-container">
+                <img
+                    src={imagem}
+                    alt={titulo}
+                    className="nft-image"
+                />
+
+                <div className="image-overlay">
+                    <span>👁</span>
+                </div>
+            </div>
+
             <h2>{titulo}</h2>
 
             <p className="description">
@@ -27,6 +40,7 @@ function CardNFT({ titulo, descricao, preco, tempo }) {
                     Creation of <span>Jules Wyvern</span>
                 </p>
             </div>
+
         </div>
     );
 }
